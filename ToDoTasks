@@ -1,0 +1,10 @@
+To do
+=====
+
+1. The RATL.css file is not required but is a placeholder if you want
+to move the css styling out of the html page itself.  This was tried,
+but for some reason, the .ui-page background color does not get applied
+when moving out to a separate stylesheet (something related to JQuery).
+
+2. Potentially changeable text should be pulled out of the main page and
+instead loaded from an structured resource of some kind.
