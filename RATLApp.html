@@ -1,0 +1,262 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>jQuery Mobile Web App</title>
+
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" type="text/css"/>
+
+<style media="screen" type="text/css">
+@charset "utf-8";
+.ui-btn-text .ui-li-desc .ui-header .ui-title {
+margin-right: 0px !important;
+margin-left: 0px !important;
+overflow: visible !important;
+white-space: normal !important;
+}
+.ui-page { 
+background:#6780ad;
+}
+</style>
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+</head> 
+<body> 
+
+<div data-role="page" id="Top">
+	<div data-role="header">
+		<p align="center">Teaching and Learning Capability Map</p>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview" data-count-theme="e" data-inset="true">
+			<li><a href="#Strategic" data-role="button" data-transition="slide">Strategic Capabilities</a></li>
+            <li><a href="#Core" data-role="button" data-transition="slide">Core Competencies</a></li>
+			<li><a href="#Supporting" data-role="button"  data-transition="slide">Supporting Capabilities</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+<div align="center"><a href="https://spaces.internet2.edu/display/itana/Learning+Working+Group" data-role="button" data-icon="home" data-direction="reverse" data-mini="true">Find out more at ITANA</a></div>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="Strategic">
+	<div data-role="header">
+		<p style="text-align: center">Strategic Capabilities</p>
+	</div>
+	<div data-role="content">
+    <div>
+    <ul data-role="listview" data-theme="b">
+      <li data-icon="home"></li>
+      <li>Competency Acquisition</li>
+      <li>Learner Community Building</li>
+      <li>Pedagogical Development</li>
+      <li>Strategic Positioning</li>
+    </ul>
+    </div>   
+<div>&nbsp;</div>
+<a href="#popHelp" data-rel="popup" data-inline="true" data-theme="e" data-role="button" data-transition="pop">What are these?</a>
+				<div data-role="popup" id="popHelp">
+                <a href="#" data-rel="back" data-role="button" data-theme="e" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-mini="true">Close</a>
+					<p>Desired outcomes based upon the enterprise's strategic goals.</p>
+				</div>
+	</div>
+	<div data-role="footer">
+<div align="center"><a href="#Top" data-role="button" data-icon="back" data-transition="slide" data-direction="reverse">Teaching and Learning Map</a></div>
+	</div>
+</div>
+
+<div data-role="page" id="Core">
+	<div data-role="header">
+		<p style="text-align: center">Core Capabilities</p>
+	</div>
+	<div data-role="content">
+<div data-role="collapsible" data-inset="false" data-content-theme="b">
+    <h4>Curriculum Management</h4>
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Curriculum Design</h3>
+		<p>Design learning units and paths of study to enable learners to acquire competencies based on the enterprise's market position.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Scheduling</h3>
+		<p>Manage and schedule resources, such as instructors, facilities, and tools.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Instructor Management</h3>
+		<p>Manage the pool of instructors and facilitate activities such as shared governance or design of learning and assessment resources.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Matriculation and Enrollment</h3>
+		<p>Onboard new learners for one or more learning units.</p>
+	</div><!-- collapsible -->
+</div><!-- collapsible -->
+<div data-role="collapsible" data-inset="false" data-content-theme="b">
+    <h4>Instructional Design</h4>
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Learning Component Design</h3>
+		<p>Design new learning components.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Learning Component Production</h3>
+		<p>Produce new learning components based on learning component designs.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Learning Component Curation</h3>
+		<p>Store, re-use, and archive learning components.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Learning Component Assessment</h3>
+		<p>Assess learning components before and after use.</p>
+	</div><!-- collapsible -->
+</div><!-- collapsible -->
+<div data-role="collapsible" data-inset="false" data-content-theme="b">
+    <h4>Accreditation</h4>
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Curriculum Review</h3>
+		<p>Review and revise the enterprise's activities to meet accreditation standards.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Accreditation Reporting</h3>
+		<p>Report on the enterprise's activities in support of accreditation.</p>
+	</div><!-- collapsible -->
+</div><!-- collapsible -->
+<div data-role="collapsible" data-inset="false" data-content-theme="b">
+    <h4>Teaching</h4>
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Scaffolding</h3>
+		<p>Plan a learning experience, such as a course.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Learner Management</h3>
+		<p>View, communicate with, and group the learners enrolled in a learning unit instance.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Learning Component Delivery</h3>
+		<p>Make learning components available for learning.</p>
+	</div><!-- collapsible -->
+</div><!-- collapsible -->
+<div data-role="collapsible" data-inset="false" data-content-theme="b">
+    <h4>Learning</h4>
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Learning Plan</h3>
+		<p>Plan the learner's progress, based on the learner's goals for applying their acquired competencies.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Mentoring/Advising</h3>
+		<p>Advise learners based on their goals, learning plan, and assessment results. May also include proactive advising in the form of intervention.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Learning Experience</h3>
+		<p>Progress toward desired competencies through interaction with an instructor, learning component, and/or other learners.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Group Collaboration</h3>
+		<p>Enable learners to work together and produce artifacts in groups.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Learner Content Management</h3>
+		<p>Store and re-use the artifacts produced by learners.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Portfolio Management</h3>
+		<p>Enable learners to organize their work in a professional portfolio.</p>
+	</div><!-- collapsible -->
+</div><!-- collapsible -->
+<div data-role="collapsible" data-inset="false" data-content-theme="b">
+    <h4>Assessment</h4>
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Assessment Design</h3>
+		<p>Plan and design assessments based on curriculum goals.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Assessment Administration</h3>
+		<p>Carry out assessment of learners.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Assessment Evaluation</h3>
+		<p>Evaluate the results of learner assessment.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Learner Certification</h3>
+		<p>Grant statuses (such as degrees, certificates, badges) to learners who have demonstrated competencies through assessment.</p>
+	</div><!-- collapsible -->
+</div><!-- collapsible -->
+
+<a href="#popHelp" data-rel="popup" data-role="button" data-theme="e" data-inline="true" data-transition="pop">What are these?</a>
+
+				<div data-role="popup" id="popHelp">
+                <a href="#" data-rel="back" data-role="button" data-theme="e" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-mini="true">Close</a>
+					<p>What the enterprise does to deliver its strategic capabilities.</p>
+				</div>
+</div><!-- content -->
+
+<div data-role="footer">
+	<div align="center"><a href="#Top" data-role="button" data-icon="back" 
+		data-transition="slide" data-direction="reverse">Teaching and Learning Map</a></div>
+</div>
+</div> <!-- footer -->
+
+<div data-role="page" id="Supporting">
+	<div data-role="header">
+		<p style="text-align: center">Supporting Capabilities</p>
+	</div>
+
+<div data-role="content">	
+
+	<div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Academic Records Administration</h3>
+		<p>Maintain records including matriculations, enrollments, instructor assignments, assessment results, and learner certifications.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Human Resources Administration</h3>
+		<p>Recruit and retain human resources including instructors, staff, and student employees.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Identity and Access Management</h3>
+		<p>Maintain identity records to enable participants to access appropriate enterprise resources and participate in inter-enterprise identity federations.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Technology Management</h3>
+		<p>Review and revise the array of technology solutions that support enterprise capabilities.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Data Analytics</h3>
+		<p>Enable analytic reporting on all teaching and learning data, for example, for enrollment management, accreditation reporting, and compliance reporting.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Communication and Collaboration</h3>
+		<p>Support physical and virtual avenues of communication and collaboration between instructors, learners, and other participants.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Facilities Management</h3>
+		<p>Maintain information about space and related resources to support teaching and learning.</p>
+	</div><!-- collapsible -->
+	  <div data-role="collapsible" data-theme="b" data-content-theme="d">
+		<h3>Financials Management</h3>
+		<p>Perform budgeting and other planning to support teaching and learning initiatives.</p>
+	</div><!-- collapsible -->
+
+
+<a href="#popHelp" data-rel="popup" data-role="button" data-inline="true" data-theme="e" data-transition="pop">What are these?</a>
+
+<div data-role="popup" id="popHelp">
+	<a href="#" data-rel="back" data-role="button" data-theme="e" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-mini="true">Close</a>
+	<p>Shared capabilities that enable core capbabilities</p>
+</div> <!-- popup -->
+</div> <!-- content -->
+
+<div data-role="footer">
+<div align="center"><a href="#Top" data-role="button" data-icon="back" data-transition="slide" data-direction="reverse">Teaching and Learning Map</a></div>
+</div> <!-- footer -->
+
+</div> <!-- page -->
+<script type="text/javascript">
+$(function() {
+	$( "#Button1" ).button(); 
+});
+</script>
+</body>
+</html>

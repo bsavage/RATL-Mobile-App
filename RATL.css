@@ -1,0 +1,6 @@
+@charset "utf-8";
+.ui-btn-text .ui-li-desc .ui-header .ui-title {
+white-space: normal;
+}
+.ui-title { margin-left:0px; margin-right:0px
+}
